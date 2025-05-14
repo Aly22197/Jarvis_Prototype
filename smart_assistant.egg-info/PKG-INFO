@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: smart-assistant
+Version: 1.0.0
+Summary: A smart virtual assistant with vision-based controls
+Author: AI Assistant
+Author-email: ai@example.com
+Keywords: computer vision,face recognition,gesture recognition,OCR
+Requires-Python: >=3.7
+License-File: LICENSE

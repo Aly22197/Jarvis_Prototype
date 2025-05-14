@@ -1,0 +1,164 @@
+[2025-05-15 01:12:18] Command: Stop
+[2025-05-15 01:12:20] Command: Stop
+[2025-05-15 01:12:23] Command: Stop
+[2025-05-15 01:12:25] Command: Stop
+[2025-05-15 01:12:27] Command: Play
+[2025-05-15 01:12:30] Command: Play
+[2025-05-15 01:12:32] Command: Play
+[2025-05-15 01:12:35] Command: Play
+[2025-05-15 01:12:37] Command: Next Slide
+[2025-05-15 01:12:39] Command: Next Slide
+[2025-05-15 01:12:41] Command: Next Slide
+[2025-05-15 01:12:42] Command: Next Slide
+[2025-05-15 01:12:44] Command: Next Slide
+[2025-05-15 01:12:46] Command: Next Slide
+[2025-05-15 01:12:48] Command: Next Slide
+[2025-05-15 01:12:49] Command: Next Slide
+[2025-05-15 01:12:57] Command: Previous Slide
+[2025-05-15 01:12:58] Command: Previous Slide
+[2025-05-15 01:20:10] Command: Stop
+[2025-05-15 01:20:12] Command: Stop
+[2025-05-15 01:20:15] Command: Stop
+[2025-05-15 01:20:17] Command: Stop
+[2025-05-15 01:20:19] Command: Stop
+[2025-05-15 01:20:20] Command: Stop
+[2025-05-15 01:20:22] Command: Play
+[2025-05-15 01:20:24] Command: Play
+[2025-05-15 01:20:25] Command: Play
+[2025-05-15 01:20:27] Command: Play
+[2025-05-15 01:20:29] Command: Play
+[2025-05-15 01:20:29] Command: Pinch
+[2025-05-15 01:20:31] Command: Pinch
+[2025-05-15 01:20:33] Command: Point - Details: {'finger_tip': (778, 607)}
+[2025-05-15 01:20:34] Command: Point - Details: {'finger_tip': (771, 593)}
+[2025-05-15 01:20:34] Command: Pinch
+[2025-05-15 01:20:36] Command: Pinch
+[2025-05-15 01:20:37] Command: Pinch
+[2025-05-15 01:20:39] Command: Pinch
+[2025-05-15 01:20:41] Command: Stop
+[2025-05-15 01:20:42] Command: Stop
+[2025-05-15 01:20:44] Command: Stop
+[2025-05-15 01:20:46] Command: Play
+[2025-05-15 01:20:47] Command: Play
+[2025-05-15 01:20:49] Command: Play
+[2025-05-15 01:20:51] Command: Play
+[2025-05-15 01:20:53] Command: Play
+[2025-05-15 01:20:55] Command: Play
+[2025-05-15 01:20:56] Command: Play
+[2025-05-15 01:20:58] Command: Next Slide
+[2025-05-15 01:21:00] Command: Next Slide
+[2025-05-15 01:21:02] Command: Next Slide
+[2025-05-15 01:21:04] Command: Stop
+[2025-05-15 01:21:06] Command: Stop
+[2025-05-15 01:21:08] Command: Stop
+[2025-05-15 01:21:09] Command: Stop
+[2025-05-15 01:21:11] Command: Previous Slide
+[2025-05-15 01:21:13] Command: Previous Slide
+[2025-05-15 01:21:14] Command: Stop
+[2025-05-15 01:23:47] Command: Pinch
+[2025-05-15 01:23:53] Command: Stop
+[2025-05-15 01:23:54] Command: Stop
+[2025-05-15 01:23:55] Command: Play
+[2025-05-15 01:23:56] Command: Next Slide
+[2025-05-15 01:23:57] Command: Point - Details: {'finger_tip': (467, 229)}
+[2025-05-15 01:23:58] Command: Previous Slide
+[2025-05-15 01:24:00] Command: Previous Slide
+[2025-05-15 01:24:00] Command: Pinch
+[2025-05-15 01:24:02] Command: Pinch
+[2025-05-15 01:24:03] Command: Play
+[2025-05-15 01:24:04] Command: Play
+[2025-05-15 01:24:05] Command: Stop
+[2025-05-15 01:24:06] Command: Play
+[2025-05-15 01:24:08] Command: Previous Slide
+[2025-05-15 01:24:09] Command: Previous Slide
+[2025-05-15 01:24:17] Command: Point - Details: {'finger_tip': (531, 339)}
+[2025-05-15 01:24:20] Command: Point - Details: {'finger_tip': (500, 337)}
+[2025-05-15 01:24:21] Command: Point - Details: {'finger_tip': (501, 337)}
+[2025-05-15 01:24:23] Command: Point - Details: {'finger_tip': (605, 471)}
+[2025-05-15 01:24:23] Command: Pinch
+[2025-05-15 01:27:53] Command: Pinch
+[2025-05-15 01:27:53] Command: Point - Details: {'finger_tip': (953, 607)}
+[2025-05-15 01:27:54] Command: Pinch
+[2025-05-15 01:27:56] Command: Pinch
+[2025-05-15 01:27:57] Command: Point - Details: {'finger_tip': (962, 613)}
+[2025-05-15 01:27:57] Command: Pinch
+[2025-05-15 01:27:58] Command: Point - Details: {'finger_tip': (950, 610)}
+[2025-05-15 01:27:59] Command: Pinch
+[2025-05-15 01:28:00] Command: Point - Details: {'finger_tip': (951, 611)}
+[2025-05-15 01:28:02] Command: Point - Details: {'finger_tip': (957, 589)}
+[2025-05-15 01:28:02] Command: Pinch
+[2025-05-15 01:28:04] Command: Pinch
+[2025-05-15 01:28:04] Command: Point - Details: {'finger_tip': (993, 361)}
+[2025-05-15 01:28:07] Command: Stop
+[2025-05-15 01:28:08] Command: Play
+[2025-05-15 01:28:10] Command: Stop
+[2025-05-15 01:28:11] Command: Point - Details: {'finger_tip': (533, 182)}
+[2025-05-15 01:28:12] Command: Point - Details: {'finger_tip': (390, 236)}
+[2025-05-15 01:28:14] Command: Point - Details: {'finger_tip': (640, 274)}
+[2025-05-15 01:28:16] Command: Point - Details: {'finger_tip': (533, 261)}
+[2025-05-15 01:28:17] Command: Pinch
+[2025-05-15 01:28:18] Command: Pinch
+[2025-05-15 01:28:26] Command: Pinch
+[2025-05-15 01:28:28] Command: Pinch
+[2025-05-15 01:28:30] Command: Pinch
+[2025-05-15 01:28:36] Command: Point - Details: {'finger_tip': (514, 325)}
+[2025-05-15 01:28:38] Command: Point - Details: {'finger_tip': (517, 392)}
+[2025-05-15 01:28:52] Command: Previous Slide
+[2025-05-15 01:35:58] Command: Stop
+[2025-05-15 01:36:40] Command: Stop
+[2025-05-15 01:36:41] Command: Stop
+[2025-05-15 01:36:42] Command: Play
+[2025-05-15 01:36:43] Command: Play
+[2025-05-15 01:36:47] Command: Play
+[2025-05-15 01:36:48] Command: Stop
+[2025-05-15 01:36:53] Command: Stop
+[2025-05-15 01:36:54] Command: Next Slide
+[2025-05-15 01:36:55] Command: Pinch
+[2025-05-15 01:37:02] Command: Next Slide
+[2025-05-15 01:37:04] Command: Next Slide
+[2025-05-15 01:37:04] Command: Previous Slide
+[2025-05-15 01:37:06] Command: Previous Slide
+[2025-05-15 01:37:06] Command: Stop
+[2025-05-15 01:37:08] Command: Stop
+[2025-05-15 01:37:13] Command: Stop
+[2025-05-15 01:37:16] Command: Point - Details: {'finger_tip': (415, 281)}
+[2025-05-15 01:37:18] Command: Point - Details: {'finger_tip': (357, 290)}
+[2025-05-15 01:37:22] Command: Point - Details: {'finger_tip': (220, 343)}
+[2025-05-15 01:37:33] Command: Point - Details: {'finger_tip': (355, 280)}
+[2025-05-15 01:37:35] Command: Point - Details: {'finger_tip': (283, 231)}
+[2025-05-15 01:37:37] Command: Stop
+[2025-05-15 01:42:16] Command: Point - Details: {'finger_tip': (505, 285)}
+[2025-05-15 01:42:17] Command: Point - Details: {'finger_tip': (404, 234)}
+[2025-05-15 01:42:19] Command: Point - Details: {'finger_tip': (313, 367)}
+[2025-05-15 01:42:20] Command: Stop
+[2025-05-15 01:42:22] Command: Stop
+[2025-05-15 01:42:23] Command: Play
+[2025-05-15 01:42:25] Command: Play
+[2025-05-15 01:42:25] Command: Pinch
+[2025-05-15 01:42:31] Command: Pinch
+[2025-05-15 01:42:32] Command: Pinch
+[2025-05-15 01:42:35] Command: Point - Details: {'finger_tip': (512, 305)}
+[2025-05-15 01:42:42] Command: Point - Details: {'finger_tip': (811, 507)}
+[2025-05-15 01:42:44] Command: Point - Details: {'finger_tip': (790, 475)}
+[2025-05-15 01:51:42] Command: Point - Details: {'finger_tip': (389, 367)}
+[2025-05-15 01:51:43] Command: Point - Details: {'finger_tip': (301, 309)}
+[2025-05-15 01:51:46] Command: Play
+[2025-05-15 01:51:47] Command: Pinch
+[2025-05-15 01:51:49] Command: Stop
+[2025-05-15 01:52:59] Command: Pinch
+[2025-05-15 01:52:59] Command: Stop
+[2025-05-15 01:53:01] Command: Stop
+[2025-05-15 01:53:01] Command: Pinch
+[2025-05-15 01:53:03] Command: Pinch
+[2025-05-15 01:53:03] Command: Stop
+[2025-05-15 01:53:06] Command: Stop
+[2025-05-15 01:53:13] Command: Play
+[2025-05-15 01:53:13] Command: Pinch
+[2025-05-15 01:53:17] Command: Stop
+[2025-05-15 01:53:19] Command: Stop
+[2025-05-15 02:04:41] Command: Pinch
+[2025-05-15 02:04:56] Command: Stop
+[2025-05-15 02:04:58] Command: Stop
+[2025-05-15 02:04:59] Command: Play
+[2025-05-15 02:05:01] Command: Play
+[2025-05-15 02:05:01] Command: Stop
