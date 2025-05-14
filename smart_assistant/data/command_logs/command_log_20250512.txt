@@ -1,0 +1,517 @@
+[2025-05-12 02:39:19] Command: Pinch
+[2025-05-12 02:39:23] Command: Pinch
+[2025-05-12 02:39:26] Command: Pinch
+[2025-05-12 02:39:28] Command: Pinch
+[2025-05-12 02:39:30] Command: Pinch
+[2025-05-12 02:39:33] Command: Pinch
+[2025-05-12 02:39:35] Command: Pinch
+[2025-05-12 02:39:36] Command: OpenHand
+[2025-05-12 02:39:38] Command: OpenHand
+[2025-05-12 02:39:41] Command: OpenHand
+[2025-05-12 02:39:43] Command: OpenHand
+[2025-05-12 02:39:44] Command: Pinch
+[2025-05-12 02:40:32] Command: Pinch
+[2025-05-12 02:40:34] Command: FistDown
+[2025-05-12 02:40:36] Command: FistDown
+[2025-05-12 02:40:37] Command: ThumbsDown
+[2025-05-12 02:40:40] Command: ThumbsDown
+[2025-05-12 02:40:42] Command: ThumbsDown
+[2025-05-12 02:40:44] Command: ThumbsDown
+[2025-05-12 02:40:46] Command: ThumbsUp
+[2025-05-12 02:40:48] Command: ThumbsUp
+[2025-05-12 02:40:49] Command: ThumbsDown
+[2025-05-12 02:40:52] Command: ThumbsDown
+[2025-05-12 02:40:59] Command: ThumbsDown
+[2025-05-12 02:41:01] Command: ThumbsDown
+[2025-05-12 02:41:03] Command: ThumbsDown
+[2025-05-12 02:41:05] Command: ThumbsDown
+[2025-05-12 02:41:07] Command: ThumbsDown
+[2025-05-12 02:41:09] Command: Pinch
+[2025-05-12 02:41:11] Command: Pinch
+[2025-05-12 02:41:12] Command: FistDown
+[2025-05-12 02:41:14] Command: FistDown
+[2025-05-12 02:41:16] Command: OpenHand
+[2025-05-12 02:41:18] Command: OpenHand
+[2025-05-12 02:41:20] Command: OpenHand
+[2025-05-12 02:41:22] Command: OpenHand
+[2025-05-12 02:41:43] Command: FistDown
+[2025-05-12 02:41:45] Command: FistDown
+[2025-05-12 02:41:48] Command: FistDown
+[2025-05-12 02:41:50] Command: FistDown
+[2025-05-12 02:41:54] Command: Pinch
+[2025-05-12 02:41:57] Command: Pinch
+[2025-05-12 02:41:59] Command: Pinch
+[2025-05-12 03:00:31] Command: Victory
+[2025-05-12 03:00:55] Command: Pinch
+[2025-05-12 03:01:18] Command: Pinch
+[2025-05-12 03:01:20] Command: FistDown
+[2025-05-12 03:01:21] Command: FistDown
+[2025-05-12 03:01:23] Command: OpenHand
+[2025-05-12 03:01:25] Command: OpenHand
+[2025-05-12 03:01:26] Command: OpenHand
+[2025-05-12 03:01:28] Command: OpenHand
+[2025-05-12 03:01:30] Command: Pinch
+[2025-05-12 03:01:32] Command: Pinch
+[2025-05-12 03:01:34] Command: Pinch
+[2025-05-12 03:01:38] Command: FistDown
+[2025-05-12 03:01:40] Command: FistDown
+[2025-05-12 03:01:41] Command: Pinch
+[2025-05-12 03:01:43] Command: Pinch
+[2025-05-12 03:01:45] Command: Pinch
+[2025-05-12 03:01:46] Command: Pinch
+[2025-05-12 03:01:48] Command: Pinch
+[2025-05-12 03:01:49] Command: Pinch
+[2025-05-12 03:01:51] Command: Pinch
+[2025-05-12 03:01:53] Command: Pinch
+[2025-05-12 03:02:08] Command: ThumbsDown
+[2025-05-12 03:02:10] Command: ThumbsDown
+[2025-05-12 03:02:12] Command: ThumbsDown
+[2025-05-12 03:02:13] Command: ThumbsDown
+[2025-05-12 03:02:15] Command: ThumbsDown
+[2025-05-12 03:02:17] Command: ThumbsDown
+[2025-05-12 03:02:18] Command: ThumbsDown
+[2025-05-12 03:02:20] Command: ThumbsDown
+[2025-05-12 03:02:22] Command: ThumbsDown
+[2025-05-12 03:02:23] Command: ThumbsDown
+[2025-05-12 03:02:24] Command: ThumbsUp
+[2025-05-12 03:02:31] Command: ThumbsDown
+[2025-05-12 03:02:33] Command: ThumbsDown
+[2025-05-12 03:02:35] Command: ThumbsDown
+[2025-05-12 03:02:36] Command: ThumbsUp
+[2025-05-12 03:03:09] Command: OpenHand
+[2025-05-12 03:03:11] Command: OpenHand
+[2025-05-12 03:03:13] Command: OpenHand
+[2025-05-12 03:03:14] Command: OpenHand
+[2025-05-12 03:03:22] Command: Pinch
+[2025-05-12 03:03:24] Command: Pinch
+[2025-05-12 03:03:45] Command: Pinch
+[2025-05-12 03:03:46] Command: Pinch
+[2025-05-12 03:11:16] Command: OpenHand
+[2025-05-12 03:12:15] Command: Pinch
+[2025-05-12 03:12:17] Command: Pinch
+[2025-05-12 03:12:20] Command: Pinch
+[2025-05-12 03:12:21] Command: Pinch
+[2025-05-12 03:12:23] Command: Pinch
+[2025-05-12 03:12:24] Command: Pinch
+[2025-05-12 03:12:26] Command: Pinch
+[2025-05-12 03:12:28] Command: Pinch
+[2025-05-12 03:12:38] Command: Pinch
+[2025-05-12 03:12:39] Command: Pinch
+[2025-05-12 03:12:41] Command: Pinch
+[2025-05-12 03:12:42] Command: Pinch
+[2025-05-12 03:13:09] Command: OpenHand
+[2025-05-12 03:13:11] Command: OpenHand
+[2025-05-12 03:13:13] Command: OpenHand
+[2025-05-12 03:13:16] Command: OpenHand
+[2025-05-12 03:13:18] Command: OpenHand
+[2025-05-12 03:13:20] Command: OpenHand
+[2025-05-12 03:19:43] Command: FistDown
+[2025-05-12 03:19:45] Command: FistDown
+[2025-05-12 03:19:47] Command: FistDown
+[2025-05-12 03:19:48] Command: FistDown
+[2025-05-12 03:19:50] Command: FistDown
+[2025-05-12 03:19:51] Command: ThumbsDown
+[2025-05-12 03:19:53] Command: ThumbsDown
+[2025-05-12 03:19:54] Command: ThumbsDown
+[2025-05-12 03:19:56] Command: ThumbsDown
+[2025-05-12 03:19:58] Command: ThumbsUp
+[2025-05-12 03:20:00] Command: ThumbsUp
+[2025-05-12 03:20:01] Command: ThumbsUp
+[2025-05-12 03:20:02] Command: FistDown
+[2025-05-12 03:20:03] Command: FistDown
+[2025-05-12 03:20:05] Command: FistDown
+[2025-05-12 03:20:07] Command: FistDown
+[2025-05-12 03:20:08] Command: FistDown
+[2025-05-12 03:20:10] Command: FistDown
+[2025-05-12 03:20:11] Command: Pinch
+[2025-05-12 03:20:13] Command: Pinch
+[2025-05-12 03:20:17] Command: Pinch
+[2025-05-12 03:20:21] Command: Pinch
+[2025-05-12 03:20:23] Command: Pinch
+[2025-05-12 03:20:24] Command: Pinch
+[2025-05-12 03:20:26] Command: Pinch
+[2025-05-12 03:20:28] Command: Pinch
+[2025-05-12 03:20:29] Command: Pinch
+[2025-05-12 03:20:41] Command: OpenHand
+[2025-05-12 03:20:43] Command: OpenHand
+[2025-05-12 03:20:44] Command: OpenHand
+[2025-05-12 03:20:46] Command: OpenHand
+[2025-05-12 03:20:48] Command: OpenHand
+[2025-05-12 03:20:50] Command: OpenHand
+[2025-05-12 03:20:52] Command: OpenHand
+[2025-05-12 03:20:54] Command: OpenHand
+[2025-05-12 03:20:55] Command: Pinch
+[2025-05-12 03:20:56] Command: Pinch
+[2025-05-12 03:21:00] Command: Pinch
+[2025-05-12 03:21:01] Command: Pinch
+[2025-05-12 03:21:03] Command: Pinch
+[2025-05-12 03:21:04] Command: Pinch
+[2025-05-12 03:21:06] Command: Pinch
+[2025-05-12 03:21:13] Command: Pinch
+[2025-05-12 03:21:14] Command: Pinch
+[2025-05-12 03:21:51] Command: Pinch
+[2025-05-12 03:21:53] Command: Pinch
+[2025-05-12 03:21:54] Command: Pinch
+[2025-05-12 03:21:56] Command: Pinch
+[2025-05-12 03:22:02] Command: Pinch
+[2025-05-12 03:22:03] Command: Pinch
+[2025-05-12 03:22:05] Command: Pinch
+[2025-05-12 03:22:07] Command: Pinch
+[2025-05-12 03:22:15] Command: Pinch
+[2025-05-12 03:22:17] Command: Pinch
+[2025-05-12 03:28:57] Command: Victory
+[2025-05-12 03:28:59] Command: Victory
+[2025-05-12 03:29:00] Command: FistUp
+[2025-05-12 03:29:02] Command: FistUp
+[2025-05-12 03:29:03] Command: FistUp
+[2025-05-12 03:29:05] Command: FistUp
+[2025-05-12 03:29:07] Command: FistUp
+[2025-05-12 03:29:13] Command: FistDown
+[2025-05-12 03:29:14] Command: FistDown
+[2025-05-12 03:29:16] Command: FistDown
+[2025-05-12 03:29:22] Command: Point - Details: {'finger_tip': (548, 408)}
+[2025-05-12 03:29:24] Command: Point - Details: {'finger_tip': (533, 378)}
+[2025-05-12 03:29:25] Command: Point - Details: {'finger_tip': (446, 339)}
+[2025-05-12 03:29:27] Command: Point - Details: {'finger_tip': (357, 366)}
+[2025-05-12 03:29:29] Command: Point - Details: {'finger_tip': (646, 382)}
+[2025-05-12 03:29:31] Command: Point - Details: {'finger_tip': (424, 327)}
+[2025-05-12 03:29:35] Command: Victory
+[2025-05-12 03:29:37] Command: Victory
+[2025-05-12 03:29:39] Command: Victory
+[2025-05-12 03:29:41] Command: Victory
+[2025-05-12 03:29:41] Command: ThumbsDown
+[2025-05-12 03:29:43] Command: ThumbsDown
+[2025-05-12 03:29:49] Command: OpenHand
+[2025-05-12 03:29:50] Command: OpenHand
+[2025-05-12 03:29:52] Command: OpenHand
+[2025-05-12 03:29:54] Command: OpenHand
+[2025-05-12 03:29:55] Command: OpenHand
+[2025-05-12 03:29:56] Command: SpiderMan
+[2025-05-12 03:29:58] Command: SpiderMan
+[2025-05-12 03:30:02] Command: OpenHand
+[2025-05-12 03:30:03] Command: OpenHand
+[2025-05-12 03:30:05] Command: OpenHand
+[2025-05-12 03:30:18] Command: Pinch
+[2025-05-12 03:30:54] Command: Point - Details: {'finger_tip': (454, 356)}
+[2025-05-12 03:30:56] Command: Point - Details: {'finger_tip': (524, 386)}
+[2025-05-12 03:30:57] Command: Point - Details: {'finger_tip': (463, 430)}
+[2025-05-12 03:31:06] Command: Point - Details: {'finger_tip': (353, 400)}
+[2025-05-12 03:31:08] Command: Point - Details: {'finger_tip': (361, 418)}
+[2025-05-12 03:31:09] Command: Point - Details: {'finger_tip': (456, 448)}
+[2025-05-12 03:31:11] Command: Victory
+[2025-05-12 03:31:13] Command: Victory
+[2025-05-12 03:31:14] Command: Victory
+[2025-05-12 03:31:21] Command: ThumbsDown
+[2025-05-12 03:31:22] Command: Pinch
+[2025-05-12 03:31:24] Command: Pinch
+[2025-05-12 03:31:26] Command: Pinch
+[2025-05-12 03:31:27] Command: Pinch
+[2025-05-12 03:31:29] Command: Pinch
+[2025-05-12 03:31:31] Command: Pinch
+[2025-05-12 03:36:35] Command: Pinch
+[2025-05-12 03:36:36] Command: Pinch
+[2025-05-12 03:36:38] Command: Victory
+[2025-05-12 03:36:40] Command: Victory
+[2025-05-12 03:36:41] Command: Victory
+[2025-05-12 03:36:44] Command: Victory
+[2025-05-12 03:36:45] Command: Victory
+[2025-05-12 03:36:47] Command: Victory
+[2025-05-12 03:36:47] Command: ThumbsDown
+[2025-05-12 03:36:49] Command: ThumbsDown
+[2025-05-12 03:36:50] Command: Victory
+[2025-05-12 03:36:52] Command: Victory
+[2025-05-12 03:36:53] Command: Victory
+[2025-05-12 03:36:54] Command: ThumbsDown
+[2025-05-12 03:36:56] Command: ThumbsDown
+[2025-05-12 03:36:57] Command: ThumbsDown
+[2025-05-12 03:36:59] Command: SpiderMan
+[2025-05-12 03:37:00] Command: SpiderMan
+[2025-05-12 03:37:02] Command: SpiderMan
+[2025-05-12 03:37:03] Command: OpenHand
+[2025-05-12 03:37:05] Command: OpenHand
+[2025-05-12 03:37:07] Command: OpenHand
+[2025-05-12 03:37:08] Command: OpenHand
+[2025-05-12 03:37:13] Command: Victory
+[2025-05-12 03:37:14] Command: SpiderMan
+[2025-05-12 03:37:16] Command: Victory
+[2025-05-12 03:37:18] Command: Victory
+[2025-05-12 03:37:20] Command: Victory
+[2025-05-12 03:37:21] Command: Victory
+[2025-05-12 03:37:22] Command: FistUp
+[2025-05-12 03:37:24] Command: FistUp
+[2025-05-12 03:37:25] Command: FistUp
+[2025-05-12 03:37:27] Command: Victory
+[2025-05-12 03:37:29] Command: Victory
+[2025-05-12 03:37:30] Command: Victory
+[2025-05-12 03:37:31] Command: FistDown
+[2025-05-12 03:37:32] Command: Victory
+[2025-05-12 03:37:34] Command: Victory
+[2025-05-12 03:37:38] Command: Victory
+[2025-05-12 03:37:39] Command: Victory
+[2025-05-12 03:37:41] Command: Victory
+[2025-05-12 03:37:42] Command: Victory
+[2025-05-12 03:37:44] Command: Victory
+[2025-05-12 03:37:46] Command: Victory
+[2025-05-12 03:37:47] Command: Victory
+[2025-05-12 03:37:49] Command: Victory
+[2025-05-12 03:37:51] Command: Victory
+[2025-05-12 03:38:16] Command: Victory
+[2025-05-12 03:38:18] Command: Victory
+[2025-05-12 03:38:20] Command: Victory
+[2025-05-12 03:38:22] Command: Victory
+[2025-05-12 03:38:24] Command: Victory
+[2025-05-12 03:38:25] Command: FistUp
+[2025-05-12 03:38:27] Command: FistUp
+[2025-05-12 03:38:28] Command: FistUp
+[2025-05-12 03:38:30] Command: FistUp
+[2025-05-12 03:38:32] Command: Victory
+[2025-05-12 03:38:33] Command: Victory
+[2025-05-12 03:38:35] Command: Victory
+[2025-05-12 03:38:37] Command: Victory
+[2025-05-12 03:38:38] Command: Victory
+[2025-05-12 03:38:39] Command: FistDown
+[2025-05-12 03:38:41] Command: FistDown
+[2025-05-12 03:38:42] Command: FistDown
+[2025-05-12 03:38:44] Command: FistDown
+[2025-05-12 03:38:45] Command: FistUp
+[2025-05-12 03:38:52] Command: ThumbsDown
+[2025-05-12 03:38:54] Command: ThumbsDown
+[2025-05-12 03:38:55] Command: ThumbsDown
+[2025-05-12 03:38:57] Command: ThumbsDown
+[2025-05-12 03:38:58] Command: Pinch
+[2025-05-12 03:39:00] Command: Pinch
+[2025-05-12 03:39:03] Command: ThumbsDown
+[2025-05-12 03:39:05] Command: ThumbsDown
+[2025-05-12 03:39:07] Command: ThumbsDown
+[2025-05-12 03:39:08] Command: ThumbsDown
+[2025-05-12 03:39:10] Command: ThumbsDown
+[2025-05-12 03:39:10] Command: Pinch
+[2025-05-12 03:39:12] Command: Pinch
+[2025-05-12 03:39:14] Command: Pinch
+[2025-05-12 03:39:15] Command: Pinch
+[2025-05-12 03:39:17] Command: Pinch
+[2025-05-12 03:39:17] Command: Victory
+[2025-05-12 03:39:19] Command: Victory
+[2025-05-12 03:39:20] Command: ThumbsDown
+[2025-05-12 03:39:21] Command: ThumbsDown
+[2025-05-12 03:39:23] Command: ThumbsDown
+[2025-05-12 03:39:24] Command: Pinch
+[2025-05-12 03:39:26] Command: Pinch
+[2025-05-12 03:39:28] Command: Pinch
+[2025-05-12 03:39:29] Command: Pinch
+[2025-05-12 03:39:31] Command: Pinch
+[2025-05-12 03:39:32] Command: Pinch
+[2025-05-12 03:39:35] Command: Pinch
+[2025-05-12 03:39:37] Command: Pinch
+[2025-05-12 03:39:46] Command: Pinch
+[2025-05-12 03:39:48] Command: Pinch
+[2025-05-12 03:39:50] Command: Pinch
+[2025-05-12 03:39:52] Command: Point - Details: {'finger_tip': (333, 312)}
+[2025-05-12 03:45:28] Command: Victory
+[2025-05-12 03:45:30] Command: Victory
+[2025-05-12 03:45:32] Command: Victory
+[2025-05-12 03:45:35] Command: ThumbsDown
+[2025-05-12 03:45:37] Command: ThumbsDown
+[2025-05-12 03:45:38] Command: ThumbsDown
+[2025-05-12 03:45:40] Command: ThumbsDown
+[2025-05-12 03:45:41] Command: Victory
+[2025-05-12 03:45:42] Command: Victory
+[2025-05-12 03:45:44] Command: Victory
+[2025-05-12 03:45:46] Command: Victory
+[2025-05-12 03:45:47] Command: Victory
+[2025-05-12 03:45:49] Command: Victory
+[2025-05-12 03:45:51] Command: FistUp
+[2025-05-12 03:45:52] Command: FistUp
+[2025-05-12 03:48:48] Command: Victory
+[2025-05-12 03:48:49] Command: Victory
+[2025-05-12 03:48:50] Command: FistUp
+[2025-05-12 03:48:52] Command: FistUp
+[2025-05-12 03:48:53] Command: FistUp
+[2025-05-12 03:48:55] Command: FistUp
+[2025-05-12 03:48:57] Command: FistUp
+[2025-05-12 03:48:58] Command: FistDown
+[2025-05-12 03:48:59] Command: FistDown
+[2025-05-12 03:49:01] Command: FistDown
+[2025-05-12 03:49:03] Command: FistDown
+[2025-05-12 03:49:04] Command: FistDown
+[2025-05-12 03:49:06] Command: ThumbsDown
+[2025-05-12 03:49:08] Command: ThumbsDown
+[2025-05-12 03:49:10] Command: ThumbsDown
+[2025-05-12 03:49:11] Command: Victory
+[2025-05-12 03:49:12] Command: Victory
+[2025-05-12 03:49:14] Command: Victory
+[2025-05-12 03:49:16] Command: Victory
+[2025-05-12 03:49:16] Command: Point - Details: {'finger_tip': (393, 243)}
+[2025-05-12 03:49:18] Command: Point - Details: {'finger_tip': (322, 252)}
+[2025-05-12 03:49:22] Command: Point - Details: {'finger_tip': (252, 247)}
+[2025-05-12 03:49:24] Command: Point - Details: {'finger_tip': (238, 265)}
+[2025-05-12 03:50:12] Command: Pinch
+[2025-05-12 03:50:13] Command: Pinch
+[2025-05-12 03:50:18] Command: Point - Details: {'finger_tip': (396, 281)}
+[2025-05-12 03:50:20] Command: Point - Details: {'finger_tip': (403, 244)}
+[2025-05-12 03:50:21] Command: Point - Details: {'finger_tip': (519, 352)}
+[2025-05-12 03:50:23] Command: Point - Details: {'finger_tip': (446, 376)}
+[2025-05-12 03:50:28] Command: Victory
+[2025-05-12 03:50:30] Command: Victory
+[2025-05-12 03:50:32] Command: Victory
+[2025-05-12 03:50:32] Command: FistUp
+[2025-05-12 03:50:34] Command: FistUp
+[2025-05-12 03:50:37] Command: FistUp
+[2025-05-12 03:50:39] Command: FistUp
+[2025-05-12 03:52:27] Command: ThumbsDown
+[2025-05-12 03:52:29] Command: ThumbsDown
+[2025-05-12 03:52:31] Command: ThumbsDown
+[2025-05-12 03:52:34] Command: ThumbsDown
+[2025-05-12 03:52:34] Command: Victory
+[2025-05-12 03:52:36] Command: Victory
+[2025-05-12 03:52:38] Command: FistUp
+[2025-05-12 03:52:40] Command: FistUp
+[2025-05-12 03:52:43] Command: FistDown
+[2025-05-12 03:52:44] Command: FistDown
+[2025-05-12 03:52:48] Command: SpiderMan
+[2025-05-12 03:52:50] Command: SpiderMan
+[2025-05-12 03:52:52] Command: SpiderMan
+[2025-05-12 03:52:54] Command: SpiderMan
+[2025-05-12 03:52:55] Command: SpiderMan
+[2025-05-12 03:52:57] Command: OpenHand
+[2025-05-12 03:52:58] Command: OpenHand
+[2025-05-12 03:53:03] Command: ThumbsDown
+[2025-05-12 03:53:23] Command: ThumbsDown
+[2025-05-12 03:53:26] Command: Point - Details: {'finger_tip': (639, 497)}
+[2025-05-12 03:53:32] Command: Point - Details: {'finger_tip': (465, 264)}
+[2025-05-12 03:53:34] Command: Point - Details: {'finger_tip': (495, 286)}
+[2025-05-12 03:53:36] Command: Point - Details: {'finger_tip': (414, 251)}
+[2025-05-12 03:53:38] Command: Point - Details: {'finger_tip': (213, 263)}
+[2025-05-12 03:53:40] Command: Point - Details: {'finger_tip': (223, 295)}
+[2025-05-12 03:53:45] Command: ThumbsDown
+[2025-05-12 03:53:46] Command: ThumbsDown
+[2025-05-12 03:53:48] Command: ThumbsDown
+[2025-05-12 03:53:50] Command: ThumbsDown
+[2025-05-12 03:53:52] Command: ThumbsDown
+[2025-05-12 03:53:54] Command: ThumbsDown
+[2025-05-12 03:53:56] Command: ThumbsDown
+[2025-05-12 03:53:58] Command: ThumbsDown
+[2025-05-12 03:54:02] Command: ThumbsDown
+[2025-05-12 03:54:04] Command: ThumbsDown
+[2025-05-12 03:54:05] Command: ThumbsDown
+[2025-05-12 03:54:08] Command: ThumbsDown
+[2025-05-12 03:54:10] Command: ThumbsDown
+[2025-05-12 15:46:45] Command: ThumbsDown
+[2025-05-12 15:46:47] Command: ThumbsDown
+[2025-05-12 15:46:49] Command: ThumbsDown
+[2025-05-12 15:46:55] Command: ThumbsDown
+[2025-05-12 15:47:39] Command: ThumbsDown
+[2025-05-12 15:47:40] Command: Pinch
+[2025-05-12 15:47:46] Command: Pinch
+[2025-05-12 15:47:48] Command: Pinch
+[2025-05-12 15:47:49] Command: Pinch
+[2025-05-12 15:47:50] Command: Point - Details: {'finger_tip': (597, 401)}
+[2025-05-12 15:47:52] Command: Point - Details: {'finger_tip': (617, 433)}
+[2025-05-12 15:47:54] Command: Pinch
+[2025-05-12 15:47:54] Command: Point - Details: {'finger_tip': (311, 301)}
+[2025-05-12 15:47:56] Command: Point - Details: {'finger_tip': (275, 288)}
+[2025-05-12 15:47:58] Command: Point - Details: {'finger_tip': (285, 323)}
+[2025-05-12 15:47:59] Command: Point - Details: {'finger_tip': (314, 446)}
+[2025-05-12 15:48:01] Command: Point - Details: {'finger_tip': (467, 387)}
+[2025-05-12 15:48:03] Command: Point - Details: {'finger_tip': (454, 440)}
+[2025-05-12 15:48:05] Command: Point - Details: {'finger_tip': (429, 400)}
+[2025-05-12 15:48:06] Command: Point - Details: {'finger_tip': (394, 361)}
+[2025-05-12 15:48:08] Command: Point - Details: {'finger_tip': (408, 358)}
+[2025-05-12 15:48:09] Command: Point - Details: {'finger_tip': (458, 398)}
+[2025-05-12 15:48:11] Command: Point - Details: {'finger_tip': (423, 417)}
+[2025-05-12 15:48:13] Command: Point - Details: {'finger_tip': (443, 420)}
+[2025-05-12 15:48:14] Command: ThumbsDown
+[2025-05-12 15:48:17] Command: Point - Details: {'finger_tip': (605, 213)}
+[2025-05-12 15:48:19] Command: Point - Details: {'finger_tip': (597, 219)}
+[2025-05-12 15:48:20] Command: Point - Details: {'finger_tip': (552, 177)}
+[2025-05-12 15:48:22] Command: Point - Details: {'finger_tip': (340, 216)}
+[2025-05-12 15:48:24] Command: Point - Details: {'finger_tip': (317, 269)}
+[2025-05-12 15:48:25] Command: Point - Details: {'finger_tip': (247, 138)}
+[2025-05-12 15:48:27] Command: Point - Details: {'finger_tip': (200, 261)}
+[2025-05-12 15:48:32] Command: ThumbsDown
+[2025-05-12 15:48:34] Command: ThumbsDown
+[2025-05-12 15:48:36] Command: ThumbsDown
+[2025-05-12 15:48:37] Command: ThumbsDown
+[2025-05-12 15:48:39] Command: ThumbsDown
+[2025-05-12 15:48:40] Command: ThumbsDown
+[2025-05-12 15:48:42] Command: ThumbsDown
+[2025-05-12 15:48:44] Command: ThumbsDown
+[2025-05-12 15:48:45] Command: ThumbsDown
+[2025-05-12 15:48:47] Command: ThumbsDown
+[2025-05-12 15:48:49] Command: ThumbsDown
+[2025-05-12 15:48:51] Command: ThumbsDown
+[2025-05-12 15:48:52] Command: Victory
+[2025-05-12 15:48:53] Command: ThumbsDown
+[2025-05-12 15:48:55] Command: ThumbsDown
+[2025-05-12 15:48:57] Command: ThumbsDown
+[2025-05-12 15:48:58] Command: Pinch
+[2025-05-12 15:49:35] Command: ThumbsDown
+[2025-05-12 15:49:37] Command: ThumbsDown
+[2025-05-12 15:49:45] Command: Pinch
+[2025-05-12 15:50:00] Command: Point - Details: {'finger_tip': (403, 418)}
+[2025-05-12 15:50:05] Command: Point - Details: {'finger_tip': (440, 238)}
+[2025-05-12 15:50:07] Command: Point - Details: {'finger_tip': (391, 224)}
+[2025-05-12 15:50:09] Command: Point - Details: {'finger_tip': (367, 246)}
+[2025-05-12 15:50:22] Command: Point - Details: {'finger_tip': (404, 181)}
+[2025-05-12 15:50:24] Command: Point - Details: {'finger_tip': (377, 99)}
+[2025-05-12 15:50:26] Command: Point - Details: {'finger_tip': (426, 140)}
+[2025-05-12 15:50:28] Command: Point - Details: {'finger_tip': (455, 178)}
+[2025-05-12 15:50:29] Command: Pinch
+[2025-05-12 15:50:30] Command: Point - Details: {'finger_tip': (544, 331)}
+[2025-05-12 15:50:32] Command: Point - Details: {'finger_tip': (436, 175)}
+[2025-05-12 15:50:34] Command: Point - Details: {'finger_tip': (344, 133)}
+[2025-05-12 15:50:35] Command: Point - Details: {'finger_tip': (268, 121)}
+[2025-05-12 15:50:37] Command: ThumbsDown
+[2025-05-12 15:50:38] Command: Point - Details: {'finger_tip': (581, 346)}
+[2025-05-12 15:50:40] Command: Point - Details: {'finger_tip': (538, 322)}
+[2025-05-12 15:50:41] Command: Point - Details: {'finger_tip': (516, 313)}
+[2025-05-12 15:50:44] Command: Point - Details: {'finger_tip': (531, 277)}
+[2025-05-12 15:50:46] Command: Point - Details: {'finger_tip': (558, 171)}
+[2025-05-12 15:50:48] Command: Point - Details: {'finger_tip': (729, 303)}
+[2025-05-12 15:50:49] Command: Point - Details: {'finger_tip': (429, 226)}
+[2025-05-12 15:50:51] Command: Pinch
+[2025-05-12 15:50:54] Command: Pinch
+[2025-05-12 15:50:59] Command: Point - Details: {'finger_tip': (536, 198)}
+[2025-05-12 15:51:00] Command: Point - Details: {'finger_tip': (557, 206)}
+[2025-05-12 15:51:02] Command: Point - Details: {'finger_tip': (633, 222)}
+[2025-05-12 15:51:04] Command: Point - Details: {'finger_tip': (524, 213)}
+[2025-05-12 15:51:06] Command: Point - Details: {'finger_tip': (571, 327)}
+[2025-05-12 15:51:08] Command: Point - Details: {'finger_tip': (421, 266)}
+[2025-05-12 15:51:10] Command: Point - Details: {'finger_tip': (632, 274)}
+[2025-05-12 15:51:11] Command: Point - Details: {'finger_tip': (671, 344)}
+[2025-05-12 15:51:18] Command: ThumbsDown
+[2025-05-12 15:51:20] Command: ThumbsDown
+[2025-05-12 15:51:22] Command: ThumbsDown
+[2025-05-12 15:51:23] Command: Pinch
+[2025-05-12 15:51:25] Command: Pinch
+[2025-05-12 15:51:27] Command: Pinch
+[2025-05-12 15:51:28] Command: Pinch
+[2025-05-12 15:51:30] Command: Pinch
+[2025-05-12 15:51:32] Command: Pinch
+[2025-05-12 15:51:34] Command: Pinch
+[2025-05-12 15:51:35] Command: Pinch
+[2025-05-12 15:51:36] Command: Point - Details: {'finger_tip': (324, 242)}
+[2025-05-12 15:51:38] Command: Point - Details: {'finger_tip': (347, 257)}
+[2025-05-12 15:51:45] Command: SpiderMan
+[2025-05-12 15:51:47] Command: SpiderMan
+[2025-05-12 15:51:49] Command: SpiderMan
+[2025-05-12 15:51:51] Command: SpiderMan
+[2025-05-12 15:51:52] Command: Point - Details: {'finger_tip': (384, 305)}
+[2025-05-12 15:53:40] Command: ThumbsDown
+[2025-05-12 15:53:42] Command: ThumbsDown
+[2025-05-12 15:56:44] Command: Pinch
+[2025-05-12 15:57:11] Command: ThumbsDown
+[2025-05-12 15:57:13] Command: ThumbsDown
+[2025-05-12 15:57:14] Command: ThumbsDown
+[2025-05-12 15:57:16] Command: ThumbsDown
+[2025-05-12 15:57:18] Command: ThumbsDown
+[2025-05-12 15:57:54] Command: ThumbsDown
+[2025-05-12 15:58:13] Command: ThumbsDown
+[2025-05-12 15:58:19] Command: ThumbsDown
+[2025-05-12 15:58:40] Command: ThumbsDown
+[2025-05-12 16:00:27] Command: ThumbsDown
+[2025-05-12 16:00:28] Command: Point - Details: {'finger_tip': (739, 503)}
+[2025-05-12 16:00:43] Command: ThumbsDown
+[2025-05-12 16:05:17] Command: Play
+[2025-05-12 16:05:18] Command: Pinch
+[2025-05-12 16:05:20] Command: Play

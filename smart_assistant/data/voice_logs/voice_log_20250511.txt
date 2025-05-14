@@ -1,0 +1,51 @@
+[2025-05-11 14:50:43] Voice feedback system ready.
+[2025-05-11 14:50:46] Smart assistant is ready.
+[2025-05-11 14:50:49] No authorized users found. Please add a user.
+[2025-05-11 14:54:40] Voice feedback system ready.
+[2025-05-11 14:54:43] Smart assistant is ready.
+[2025-05-11 14:54:45] No authorized users found. Please add a user.
+[2025-05-11 14:58:02] Added Aly Hesham to authorized users.
+[2025-05-11 15:16:57] Voice feedback system ready.
+[2025-05-11 15:17:00] Smart assistant is ready.
+[2025-05-11 15:17:48] Drawing mode activated.
+[2025-05-11 15:17:51] Drawing mode deactivated.
+[2025-05-11 15:17:53] Drawing mode activated.
+[2025-05-11 15:17:56] Drawing mode deactivated.
+[2025-05-11 15:17:58] Drawing mode activated.
+[2025-05-11 15:18:01] Drawing mode deactivated.
+[2025-05-11 15:18:03] Drawing mode activated.
+[2025-05-11 15:18:06] Drawing mode deactivated.
+[2025-05-11 15:18:08] Drawing mode activated.
+[2025-05-11 15:18:11] Drawing mode deactivated.
+[2025-05-11 15:18:13] Drawing mode activated.
+[2025-05-11 15:18:15] Drawing mode deactivated.
+[2025-05-11 15:18:18] Drawing mode activated.
+[2025-05-11 15:18:20] Drawing mode deactivated.
+[2025-05-11 15:18:23] Drawing mode activated.
+[2025-05-11 15:18:25] Drawing mode deactivated.
+[2025-05-11 15:18:28] Drawing mode activated.
+[2025-05-11 15:18:30] Drawing mode deactivated.
+[2025-05-11 15:18:33] Drawing mode activated.
+[2025-05-11 15:18:36] Drawing mode deactivated.
+[2025-05-11 15:18:38] Drawing mode activated.
+[2025-05-11 15:18:41] Drawing mode deactivated.
+[2025-05-11 15:18:43] Drawing mode activated.
+[2025-05-11 15:18:46] Drawing mode deactivated.
+[2025-05-11 15:18:48] Drawing mode activated.
+[2025-05-11 15:18:51] Drawing mode deactivated.
+[2025-05-11 15:18:53] OCR mode activated. Show a document to the camera.
+[2025-05-11 15:18:58] OCR mode deactivated.
+[2025-05-11 15:19:01] OCR mode activated. Show a document to the camera.
+[2025-05-11 15:19:06] OCR mode deactivated.
+[2025-05-11 15:19:09] OCR mode activated. Show a document to the camera.
+[2025-05-11 15:19:14] OCR mode deactivated.
+[2025-05-11 15:19:17] OCR mode activated. Show a document to the camera.
+[2025-05-11 15:19:22] OCR mode deactivated.
+[2025-05-11 15:19:25] OCR mode activated. Show a document to the camera.
+[2025-05-11 15:19:30] OCR mode deactivated.
+[2025-05-11 15:19:33] OCR mode activated. Show a document to the camera.
+[2025-05-11 15:19:39] OCR mode deactivated.
+[2025-05-11 15:28:38] Voice feedback system ready.
+[2025-05-11 15:28:41] Smart assistant is ready.
+[2025-05-11 15:32:00] Drawing mode activated.
+[2025-05-11 15:32:22] OCR mode activated. Show a document to the camera.

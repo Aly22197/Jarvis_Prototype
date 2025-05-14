@@ -1,0 +1,125 @@
+[2025-05-14 00:14:25] Command: Pinch
+[2025-05-14 00:14:27] Command: Stop
+[2025-05-14 00:14:27] Command: Pinch
+[2025-05-14 00:14:28] Command: Stop
+[2025-05-14 00:14:30] Command: Stop
+[2025-05-14 00:14:31] Command: Stop
+[2025-05-14 00:14:33] Command: Stop
+[2025-05-14 00:14:33] Command: Pinch
+[2025-05-14 00:14:33] Command: Stop
+[2025-05-14 00:14:34] Command: Pinch
+[2025-05-14 00:14:35] Command: Pinch
+[2025-05-14 00:14:36] Command: Point - Details: {'finger_tip': (428, 547)}
+[2025-05-14 00:15:02] Command: Pinch
+[2025-05-14 00:15:20] Command: Pinch
+[2025-05-14 00:15:21] Command: Pinch
+[2025-05-14 00:15:22] Command: Point - Details: {'finger_tip': (679, 320)}
+[2025-05-14 00:15:38] Command: Point - Details: {'finger_tip': (500, 216)}
+[2025-05-14 00:15:42] Command: Stop
+[2025-05-14 00:15:50] Command: Stop
+[2025-05-14 00:15:52] Command: Stop
+[2025-05-14 00:15:54] Command: Stop
+[2025-05-14 00:15:55] Command: Play
+[2025-05-14 00:15:57] Command: Play
+[2025-05-14 00:15:58] Command: Play
+[2025-05-14 00:16:02] Command: Stop
+[2025-05-14 00:16:04] Command: Stop
+[2025-05-14 00:16:09] Command: Stop
+[2025-05-14 00:16:10] Command: Point - Details: {'finger_tip': (358, 444)}
+[2025-05-14 00:16:10] Command: Pinch
+[2025-05-14 00:16:12] Command: Stop
+[2025-05-14 00:16:15] Command: Volume Up
+[2025-05-14 00:16:16] Command: Stop
+[2025-05-14 00:16:19] Command: Stop
+[2025-05-14 00:16:21] Command: Stop
+[2025-05-14 00:16:22] Command: Stop
+[2025-05-14 00:16:24] Command: Stop
+[2025-05-14 00:16:26] Command: Stop
+[2025-05-14 00:16:27] Command: Play
+[2025-05-14 00:16:29] Command: Play
+[2025-05-14 00:16:42] Command: Stop
+[2025-05-14 00:16:43] Command: Pinch
+[2025-05-14 00:17:15] Command: Pinch
+[2025-05-14 00:17:35] Command: Pinch
+[2025-05-14 00:17:42] Command: Pinch
+[2025-05-14 00:17:43] Command: Stop
+[2025-05-14 00:17:55] Command: Stop
+[2025-05-14 00:17:56] Command: Stop
+[2025-05-14 00:18:11] Command: Stop
+[2025-05-14 00:18:14] Command: Stop
+[2025-05-14 00:18:33] Command: Pinch
+[2025-05-14 00:18:35] Command: Pinch
+[2025-05-14 00:18:37] Command: Pinch
+[2025-05-14 00:18:38] Command: Stop
+[2025-05-14 00:19:20] Command: Pinch
+[2025-05-14 00:19:22] Command: Pinch
+[2025-05-14 00:19:23] Command: Stop
+[2025-05-14 00:19:24] Command: Stop
+[2025-05-14 00:19:43] Command: Pinch
+[2025-05-14 00:19:49] Command: Pinch
+[2025-05-14 00:19:49] Command: Stop
+[2025-05-14 01:22:38] Command: Pinch
+[2025-05-14 02:37:16] Command: Stop
+[2025-05-14 02:37:17] Command: Pinch
+[2025-05-14 02:37:29] Command: Stop
+[2025-05-14 02:37:34] Command: Volume Up
+[2025-05-14 02:37:43] Command: Point - Details: {'finger_tip': (519, 718)}
+[2025-05-14 02:37:44] Command: Play
+[2025-05-14 02:37:47] Command: Stop
+[2025-05-14 02:37:52] Command: Stop
+[2025-05-14 02:37:54] Command: Play
+[2025-05-14 02:37:56] Command: Play
+[2025-05-14 02:37:57] Command: Stop
+[2025-05-14 02:38:00] Command: Next Slide
+[2025-05-14 02:38:02] Command: Next Slide
+[2025-05-14 02:38:05] Command: Previous Slide
+[2025-05-14 02:38:06] Command: Previous Slide
+[2025-05-14 02:38:08] Command: Previous Slide
+[2025-05-14 02:38:09] Command: Stop
+[2025-05-14 02:38:11] Command: Stop
+[2025-05-14 02:38:13] Command: Play
+[2025-05-14 02:38:15] Command: Play
+[2025-05-14 02:38:16] Command: Stop
+[2025-05-14 02:38:18] Command: Stop
+[2025-05-14 02:38:21] Command: Pinch
+[2025-05-14 02:38:24] Command: Stop
+[2025-05-14 02:38:39] Command: Play
+[2025-05-14 02:38:49] Command: Pinch
+[2025-05-14 02:38:57] Command: Volume Up
+[2025-05-14 02:39:22] Command: Pinch
+[2025-05-14 02:39:27] Command: Pinch
+[2025-05-14 02:44:07] Command: Stop
+[2025-05-14 02:48:10] Command: Pinch
+[2025-05-14 02:57:06] Command: Previous Slide
+[2025-05-14 02:57:07] Command: Previous Slide
+[2025-05-14 02:57:09] Command: Previous Slide
+[2025-05-14 12:44:32] Command: Pinch
+[2025-05-14 12:44:42] Command: Stop
+[2025-05-14 12:44:44] Command: Stop
+[2025-05-14 12:44:52] Command: Pinch
+[2025-05-14 12:44:53] Command: Stop
+[2025-05-14 12:45:00] Command: Stop
+[2025-05-14 12:45:06] Command: Stop
+[2025-05-14 12:45:08] Command: Stop
+[2025-05-14 12:45:10] Command: Stop
+[2025-05-14 12:45:13] Command: Pinch
+[2025-05-14 12:45:15] Command: Stop
+[2025-05-14 12:45:16] Command: Stop
+[2025-05-14 12:45:17] Command: Play
+[2025-05-14 12:45:19] Command: Pinch
+[2025-05-14 12:45:21] Command: Pinch
+[2025-05-14 12:45:23] Command: Pinch
+[2025-05-14 12:45:26] Command: Pinch
+[2025-05-14 12:45:42] Command: Point - Details: {'finger_tip': (700, 390)}
+[2025-05-14 20:29:21] Command: Point - Details: {'finger_tip': (683, 334)}
+[2025-05-14 20:36:42] Command: Pinch
+[2025-05-14 20:37:26] Command: Stop
+[2025-05-14 20:37:31] Command: Stop
+[2025-05-14 20:37:33] Command: Stop
+[2025-05-14 20:37:36] Command: Stop
+[2025-05-14 20:37:58] Command: Stop
+[2025-05-14 20:40:21] Command: Point - Details: {'finger_tip': (273, 177)}
+[2025-05-14 20:41:36] Command: Pinch
+[2025-05-14 20:41:38] Command: Stop
+[2025-05-14 20:43:00] Command: Pinch
+[2025-05-14 20:43:36] Command: Pinch

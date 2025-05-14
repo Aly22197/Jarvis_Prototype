@@ -1,0 +1,15 @@
+setup.py
+smart_assistant/__init__.py
+smart_assistant/main.py
+smart_assistant.egg-info/PKG-INFO
+smart_assistant.egg-info/SOURCES.txt
+smart_assistant.egg-info/dependency_links.txt
+smart_assistant.egg-info/requires.txt
+smart_assistant.egg-info/top_level.txt
+smart_assistant/utils/__init__.py
+smart_assistant/utils/application_control.py
+smart_assistant/utils/camera_calibration.py
+smart_assistant/utils/face_recognition.py
+smart_assistant/utils/gesture_recognition.py
+smart_assistant/utils/ocr_module.py
+smart_assistant/utils/voice_feedback.py
