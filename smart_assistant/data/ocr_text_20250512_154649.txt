@@ -1,1 +1,0 @@
-OCR unavailable - Tesseract not installed. Please install Tesseract to enable OCR.
