@@ -132,7 +132,7 @@ class FaceRecognitionModule:
         
         # Get all user directories
         user_dirs = [d for d in os.listdir(self.data_dir) 
-                     if os.path.isdir(os.path.join(self.data_dir, d))]
+                     if os.path.isdir(os.path.join(self.data_dir, d)) and d != "temp"]
         
         for user in user_dirs:
             user_dir = os.path.join(self.data_dir, user)
@@ -147,6 +147,21 @@ class FaceRecognitionModule:
             for image_file in face_images:
                 img_path = os.path.join(user_dir, image_file)
                 try:
+                    # First verify the image can be read correctly
+                    img = cv2.imread(img_path)
+                    if img is None or img.size == 0:
+                        print(f"Could not read image file {image_file} for user {user}")
+                        # Move problematic file to temp directory
+                        temp_dir = os.path.join(self.data_dir, "temp")
+                        os.makedirs(temp_dir, exist_ok=True)
+                        temp_path = os.path.join(temp_dir, image_file)
+                        try:
+                            os.rename(img_path, temp_path)
+                            print(f"Moved problematic image {image_file} to temp directory")
+                        except Exception as e:
+                            print(f"Could not move problematic file: {e}")
+                        continue
+                    
                     embedding = DeepFace.represent(
                         img_path=img_path,
                         model_name=self.model_name,
@@ -155,14 +170,33 @@ class FaceRecognitionModule:
                     )
                     
                     # Verify embedding is valid
-                    if isinstance(embedding, list) and len(embedding) > 0 and "embedding" in embedding[0]:
-                        embeddings.append(embedding)
-                        print(f"Added embedding for {user} from {image_file}")
+                    if (isinstance(embedding, list) and 
+                        len(embedding) > 0 and 
+                        "embedding" in embedding[0]):
+                        # Try to convert embedding to numpy array to validate it
+                        try:
+                            embedding_array = np.array(embedding[0]["embedding"])
+                            if not hasattr(embedding_array, "shape") or embedding_array.size == 0:
+                                raise ValueError("Invalid embedding array")
+                            
+                            embeddings.append(embedding)
+                            print(f"Added embedding for {user} from {image_file}")
+                        except Exception as e:
+                            print(f"Invalid embedding data for {user} in {image_file}: {e}")
                     else:
                         print(f"Invalid embedding format for {user} from {image_file}")
                         
                 except Exception as e:
                     print(f"Error processing face for user {user} in {image_file}: {e}")
+                    # Move problematic file to temp directory
+                    temp_dir = os.path.join(self.data_dir, "temp")
+                    os.makedirs(temp_dir, exist_ok=True)
+                    temp_path = os.path.join(temp_dir, image_file)
+                    try:
+                        os.rename(img_path, temp_path)
+                        print(f"Moved problematic image {image_file} to temp directory")
+                    except Exception as move_error:
+                        print(f"Could not move problematic file: {move_error}")
             
             if embeddings:
                 face_database[user] = embeddings
@@ -275,15 +309,20 @@ class FaceRecognitionModule:
             name: The recognized name
             confidence: The confidence score (0-1)
         """
+        # Default result
+        result = {"name": "Unknown", "confidence": 0.0}
+        
+        # Validate input image
+        if face_img is None or face_img.size == 0:
+            print("Invalid face image provided")
+            return result
+            
         # Save the face image to a temporary file
         temp_dir = os.path.join("smart_assistant", "data", "temp")
         os.makedirs(temp_dir, exist_ok=True)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         temp_face_path = os.path.join(temp_dir, f"temp_face_{timestamp}.jpg")
         cv2.imwrite(temp_face_path, face_img)
-        
-        # Default result
-        result = {"name": "Unknown", "confidence": 0.0}
         
         try:
             # Get embeddings for the detected face
@@ -298,6 +337,16 @@ class FaceRecognitionModule:
             # Validate embedding structure
             if not isinstance(embedding, list) or len(embedding) == 0 or "embedding" not in embedding[0]:
                 print(f"Invalid embedding structure: {type(embedding)}")
+                return result
+                
+            # Validate embedding data
+            try:
+                embedding_array = np.array(embedding[0]["embedding"])
+                if not hasattr(embedding_array, "shape") or embedding_array.size == 0:
+                    print("Invalid embedding array shape")
+                    return result
+            except Exception as e:
+                print(f"Error validating embedding: {e}")
                 return result
                 
             # Compare with the database
@@ -315,30 +364,38 @@ class FaceRecognitionModule:
                         # Ensure both embeddings are properly formatted
                         if not isinstance(db_embedding, list) or len(db_embedding) == 0 or "embedding" not in db_embedding[0]:
                             continue
+                        
+                        try:
+                            v1 = np.array(embedding[0]["embedding"])
+                            v2 = np.array(db_embedding[0]["embedding"])
                             
-                        v1 = np.array(embedding[0]["embedding"])
-                        v2 = np.array(db_embedding[0]["embedding"])
-                        
-                        # Validate vectors shape
-                        if not hasattr(v1, "shape") or not hasattr(v2, "shape"):
-                            continue
+                            # Validate vectors shape
+                            if not hasattr(v1, "shape") or not hasattr(v2, "shape"):
+                                continue
+                                
+                            # Ensure vectors have proper dimensions
+                            if v1.size == 0 or v2.size == 0:
+                                continue
+                                
+                            # Normalize vectors
+                            v1_norm = np.linalg.norm(v1)
+                            v2_norm = np.linalg.norm(v2)
                             
-                        # Normalize vectors
-                        v1_norm = np.linalg.norm(v1)
-                        v2_norm = np.linalg.norm(v2)
-                        
-                        # Skip if either norm is zero
-                        if v1_norm == 0 or v2_norm == 0:
+                            # Skip if either norm is zero
+                            if v1_norm == 0 or v2_norm == 0:
+                                continue
+                            
+                            # Compute cosine similarity
+                            cosine_sim = np.dot(v1, v2) / (v1_norm * v2_norm)
+                            
+                            # Convert to cosine distance (1 - similarity)
+                            distance = 1 - cosine_sim
+                            user_distances.append(distance)
+                        except Exception as e:
+                            print(f"Error comparing embeddings: {e}")
                             continue
-                        
-                        # Compute cosine similarity
-                        cosine_sim = np.dot(v1, v2) / (v1_norm * v2_norm)
-                        
-                        # Convert to cosine distance (1 - similarity)
-                        distance = 1 - cosine_sim
-                        user_distances.append(distance)
                     except Exception as e:
-                        print(f"Error comparing embeddings: {e}")
+                        print(f"Error processing database embedding: {e}")
                         continue
                 
                 # Use the minimum distance for this user (best match)
@@ -352,6 +409,10 @@ class FaceRecognitionModule:
             if os.path.exists(temp_face_path):
                 os.remove(temp_face_path)
             
+            # No matches found in database
+            if min_distance == float('inf'):
+                return result
+                
             # Convert distance to confidence (1 - distance)
             confidence = 1.0 - min_distance
             

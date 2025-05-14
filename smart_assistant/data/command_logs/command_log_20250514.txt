@@ -123,3 +123,8 @@
 [2025-05-14 20:41:38] Command: Stop
 [2025-05-14 20:43:00] Command: Pinch
 [2025-05-14 20:43:36] Command: Pinch
+[2025-05-14 22:56:59] Command: Stop
+[2025-05-14 22:56:59] Command: Point - Details: {'finger_tip': (1079, 300)}
+[2025-05-14 22:57:00] Command: Pinch
+[2025-05-14 23:00:37] Command: Pinch
+[2025-05-14 23:02:29] Command: Pinch

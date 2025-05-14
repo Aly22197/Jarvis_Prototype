@@ -33,9 +33,10 @@ class CameraCalibrationModule:
         # Create directory if it doesn't exist
         os.makedirs(self.data_dir, exist_ok=True)
         
-        # Calibration parameters
-        self.chessboard_size = (9, 6)  # Number of internal corners
-        self.square_size = 0.025  # Size of a square in meters
+        # Calibration parameters - try multiple chessboard sizes as fallbacks
+        self.chessboard_size_options = [(9, 6), (8, 6), (7, 6), (6, 6)]  # Common chessboard sizes
+        self.chessboard_size = self.chessboard_size_options[0]  # Start with 9x6
+        self.square_size = 0.024  # Size of a square in meters (typical printed chessboards)
         
         # Calibration state
         self.is_calibrated = False
@@ -111,18 +112,27 @@ class CameraCalibrationModule:
         # Convert to grayscale
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         
-        # Find chessboard corners
-        ret, corners = cv2.findChessboardCorners(
-            gray, self.chessboard_size, 
-            flags=cv2.CALIB_CB_ADAPTIVE_THRESH + cv2.CALIB_CB_NORMALIZE_IMAGE + cv2.CALIB_CB_FAST_CHECK
-        )
+        # Try each chessboard size option
+        for size in self.chessboard_size_options:
+            # Find chessboard corners
+            ret, corners = cv2.findChessboardCorners(
+                gray, size, 
+                flags=cv2.CALIB_CB_ADAPTIVE_THRESH + cv2.CALIB_CB_NORMALIZE_IMAGE + cv2.CALIB_CB_FAST_CHECK
+            )
+            
+            if ret:
+                # Update the current chessboard size
+                self.chessboard_size = size
+                print(f"Found chessboard with size {size}")
+                
+                # Refine corner positions
+                criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
+                corners = cv2.cornerSubPix(gray, corners, (11, 11), (-1, -1), criteria)
+                
+                return ret, corners
         
-        if ret:
-            # Refine corner positions
-            criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
-            corners = cv2.cornerSubPix(gray, corners, (11, 11), (-1, -1), criteria)
-        
-        return ret, corners
+        # If no pattern was found with any size
+        return False, None
 
     def undistort_frame(self, frame):
         """
@@ -170,25 +180,18 @@ class CameraCalibrationModule:
             print(f"Error undistorting frame: {e}")
             return frame
 
-    def calibrate(self, cap):
+    def calibrate(self, cap, use_sample_images=True):
         """
         Calibrate the camera using a live video feed
         
         Args:
             cap: OpenCV VideoCapture object
+            use_sample_images: Boolean to indicate whether to use sample images
             
         Returns:
             success: Boolean indicating if calibration was successful
         """
         print("Starting camera calibration...")
-        print("Please show a chessboard pattern to the camera.")
-        print("Press 'c' to capture frames for calibration.")
-        print("Press 'q' to finish calibration.")
-        
-        # Prepare object points
-        objp = np.zeros((self.chessboard_size[0] * self.chessboard_size[1], 3), np.float32)
-        objp[:, :2] = np.mgrid[0:self.chessboard_size[0], 0:self.chessboard_size[1]].T.reshape(-1, 2)
-        objp = objp * self.square_size
         
         # Arrays to store object points and image points
         objpoints = []  # 3D points in real world space
@@ -199,6 +202,116 @@ class CameraCalibrationModule:
         
         # Counter for captured frames
         captured_frames = 0
+        
+        # Remember which chessboard size was used for each frame
+        used_chessboard_sizes = []
+        
+        # Check for sample chessboard images
+        if use_sample_images:
+            # First try to use sample images from chessboard_images directory
+            chessboard_dir = "chessboard_images"
+            sample_images = []
+            
+            if os.path.exists(chessboard_dir):
+                sample_images = [f for f in os.listdir(chessboard_dir) 
+                                if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
+                
+                if sample_images:
+                    print(f"Found {len(sample_images)} sample chessboard images. Processing...")
+                    
+                    for img_file in sample_images:
+                        img_path = os.path.join(chessboard_dir, img_file)
+                        frame = cv2.imread(img_path)
+                        
+                        if frame is None:
+                            print(f"Could not read image: {img_path}")
+                            continue
+                            
+                        # Store frame size
+                        if frame_size is None:
+                            frame_size = (frame.shape[1], frame.shape[0])
+                            
+                        # Find chessboard corners
+                        ret, corners = self._find_chessboard_corners(frame)
+                        
+                        if ret:
+                            # Create object points for the current chessboard size
+                            current_size = self.chessboard_size
+                            objp = np.zeros((current_size[0] * current_size[1], 3), np.float32)
+                            objp[:, :2] = np.mgrid[0:current_size[0], 0:current_size[1]].T.reshape(-1, 2)
+                            objp = objp * self.square_size
+                            
+                            objpoints.append(objp)
+                            imgpoints.append(corners)
+                            used_chessboard_sizes.append(current_size)
+                            captured_frames += 1
+                            print(f"Found corners in {img_file}. Total: {captured_frames}")
+                        else:
+                            print(f"No corners found in {img_file}")
+                            
+                        # Display the image with corners
+                        display_frame = frame.copy()
+                        if ret:
+                            cv2.drawChessboardCorners(display_frame, self.chessboard_size, corners, ret)
+                            
+                        cv2.imshow("Chessboard Sample", display_frame)
+                        cv2.waitKey(500)  # Show each image for 500ms
+                        
+                    cv2.destroyWindow("Chessboard Sample")
+                    
+                    if captured_frames >= 3:
+                        print(f"Successfully processed {captured_frames} sample images.")
+                        
+                        # If we already have enough sample images, we can proceed to calibration
+                        if captured_frames >= 5:
+                            print("Proceeding to calibration using sample images...")
+                            goto_calibration = True
+                            
+                            # Skip the live camera calibration
+                            if goto_calibration:
+                                # Proceed with calibration
+                                print(f"Calculating calibration using {captured_frames} frames...")
+                                
+                                # Perform camera calibration
+                                ret, camera_matrix, dist_coeffs, rvecs, tvecs = cv2.calibrateCamera(
+                                    objpoints, imgpoints, frame_size, None, None
+                                )
+                                
+                                if ret:
+                                    # Store calibration results
+                                    self.camera_matrix = camera_matrix
+                                    self.dist_coeffs = dist_coeffs
+                                    self.rvecs = rvecs
+                                    self.tvecs = tvecs
+                                    self.is_calibrated = True
+                                    
+                                    # Calculate reprojection error
+                                    mean_error = 0
+                                    for i in range(len(objpoints)):
+                                        imgpoints2, _ = cv2.projectPoints(objpoints[i], rvecs[i], tvecs[i], camera_matrix, dist_coeffs)
+                                        error = cv2.norm(imgpoints[i], imgpoints2, cv2.NORM_L2) / len(imgpoints2)
+                                        mean_error += error
+                                    
+                                    mean_error = mean_error / len(objpoints)
+                                    print(f"Calibration complete. Reprojection error: {mean_error}")
+                                    
+                                    # Save calibration
+                                    self._save_calibration()
+                                    
+                                    return True
+                                else:
+                                    print("Calibration failed with sample images. Continuing with live calibration...")
+                    else:
+                        print("Not enough sample images had valid chessboard corners. Continuing with live calibration...")
+                else:
+                    print("No sample images found. Continuing with live calibration...")
+            else:
+                print(f"Sample directory {chessboard_dir} not found. Continuing with live calibration...")
+                
+        # Live calibration with camera
+        print("Please show a chessboard pattern to the camera.")
+        print("Press 'c' to capture frames for calibration.")
+        print("Press 'q' to finish calibration.")
         
         # Feedback window
         cv2.namedWindow("Camera Calibration", cv2.WINDOW_NORMAL)
@@ -240,10 +353,17 @@ class CameraCalibrationModule:
                 
                 # Press 'c' to capture frame
                 if key == ord('c') and ret:
+                    # Create object points for the current chessboard size
+                    current_size = self.chessboard_size
+                    objp = np.zeros((current_size[0] * current_size[1], 3), np.float32)
+                    objp[:, :2] = np.mgrid[0:current_size[0], 0:current_size[1]].T.reshape(-1, 2)
+                    objp = objp * self.square_size
+                    
                     objpoints.append(objp)
                     imgpoints.append(corners)
+                    used_chessboard_sizes.append(current_size)
                     captured_frames += 1
-                    print(f"Frame captured. Total: {captured_frames}")
+                    print(f"Frame captured. Total: {captured_frames}, chessboard size: {current_size}")
                     
                     # Save the calibration frame
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -270,34 +390,81 @@ class CameraCalibrationModule:
             print(f"Calculating calibration using {captured_frames} frames...")
             
             # Perform camera calibration
-            ret, camera_matrix, dist_coeffs, rvecs, tvecs = cv2.calibrateCamera(
-                objpoints, imgpoints, frame_size, None, None
-            )
-            
-            if ret:
-                # Store calibration results
-                self.camera_matrix = camera_matrix
-                self.dist_coeffs = dist_coeffs
-                self.rvecs = rvecs
-                self.tvecs = tvecs
-                self.is_calibrated = True
+            try:
+                ret, camera_matrix, dist_coeffs, rvecs, tvecs = cv2.calibrateCamera(
+                    objpoints, imgpoints, frame_size, None, None
+                )
                 
-                # Calculate reprojection error
-                mean_error = 0
-                for i in range(len(objpoints)):
-                    imgpoints2, _ = cv2.projectPoints(objpoints[i], rvecs[i], tvecs[i], camera_matrix, dist_coeffs)
-                    error = cv2.norm(imgpoints[i], imgpoints2, cv2.NORM_L2) / len(imgpoints2)
-                    mean_error += error
+                if ret:
+                    # Store calibration results
+                    self.camera_matrix = camera_matrix
+                    self.dist_coeffs = dist_coeffs
+                    self.rvecs = rvecs
+                    self.tvecs = tvecs
+                    self.is_calibrated = True
+                    
+                    # Calculate reprojection error
+                    mean_error = 0
+                    for i in range(len(objpoints)):
+                        imgpoints2, _ = cv2.projectPoints(objpoints[i], rvecs[i], tvecs[i], camera_matrix, dist_coeffs)
+                        error = cv2.norm(imgpoints[i], imgpoints2, cv2.NORM_L2) / len(imgpoints2)
+                        mean_error += error
+                    
+                    mean_error = mean_error / len(objpoints)
+                    print(f"Calibration complete. Reprojection error: {mean_error}")
+                    
+                    # Save calibration
+                    self._save_calibration()
+                    
+                    return True
+                else:
+                    print("Calibration failed.")
+                    return False
+            except Exception as e:
+                print(f"Error during calibration calculation: {e}")
                 
-                mean_error = mean_error / len(objpoints)
-                print(f"Calibration complete. Reprojection error: {mean_error}")
+                # If calibration failed, try a single chessboard size
+                if len(set(used_chessboard_sizes)) > 1:
+                    print("Trying calibration with only one chessboard size...")
+                    # Find the most common chessboard size
+                    from collections import Counter
+                    most_common_size = Counter(used_chessboard_sizes).most_common(1)[0][0]
+                    print(f"Using most common chessboard size: {most_common_size}")
+                    
+                    # Filter data points to only use the most common size
+                    filtered_objpoints = []
+                    filtered_imgpoints = []
+                    
+                    for i in range(len(used_chessboard_sizes)):
+                        if used_chessboard_sizes[i] == most_common_size:
+                            filtered_objpoints.append(objpoints[i])
+                            filtered_imgpoints.append(imgpoints[i])
+                    
+                    print(f"Using {len(filtered_objpoints)} frames with consistent chessboard size.")
+                    
+                    try:
+                        ret, camera_matrix, dist_coeffs, rvecs, tvecs = cv2.calibrateCamera(
+                            filtered_objpoints, filtered_imgpoints, frame_size, None, None
+                        )
+                        
+                        if ret:
+                            # Store calibration results
+                            self.camera_matrix = camera_matrix
+                            self.dist_coeffs = dist_coeffs
+                            self.rvecs = rvecs
+                            self.tvecs = tvecs
+                            self.is_calibrated = True
+                            
+                            print("Calibration completed successfully with filtered data.")
+                            self._save_calibration()
+                            return True
+                        else:
+                            print("Calibration failed with filtered data.")
+                            return False
+                    except Exception as e2:
+                        print(f"Error during filtered calibration: {e2}")
+                        return False
                 
-                # Save calibration
-                self._save_calibration()
-                
-                return True
-            else:
-                print("Calibration failed.")
                 return False
                 
         except Exception as e:

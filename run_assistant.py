@@ -48,6 +48,12 @@ if __name__ == "__main__":
     
     if args.calibrate:
         print("Running camera calibration mode...")
-        assistant.camera_calibration.calibrate(assistant.cap)
+        print("TIP: If you don't have a physical chessboard, the program will use sample")
+        print("     images from the 'chessboard_images' directory.")
+        calibration_success = assistant.camera_calibration.calibrate(assistant.cap)
+        if calibration_success:
+            print("Camera calibration completed successfully!")
+        else:
+            print("Camera calibration failed or was cancelled.")
     else:
         assistant.run()

@@ -777,7 +777,26 @@ class SmartAssistant:
                         self.canvas = np.zeros((720, 1280, 3), dtype=np.uint8)
                         print("Canvas cleared")
                     else:
+                        print("Starting camera calibration...")
+                        self.voice_feedback.speak("Starting camera calibration.")
                         self.camera_calibration.calibrate(self.cap)
+                        if self.camera_calibration.is_calibrated:
+                            print("Camera calibration completed successfully!")
+                            self.voice_feedback.speak("Camera calibration completed successfully.")
+                        else:
+                            print("Camera calibration failed or was cancelled.")
+                            self.voice_feedback.speak("Camera calibration failed or was cancelled.")
+                # Press 'Shift+C' to force camera calibration even in drawing mode
+                elif key == ord('C'):  # Capital C (Shift+C)
+                    print("Starting camera calibration (forced)...")
+                    self.voice_feedback.speak("Starting camera calibration.")
+                    self.camera_calibration.calibrate(self.cap)
+                    if self.camera_calibration.is_calibrated:
+                        print("Camera calibration completed successfully!")
+                        self.voice_feedback.speak("Camera calibration completed successfully.")
+                    else:
+                        print("Camera calibration failed or was cancelled.")
+                        self.voice_feedback.speak("Camera calibration failed or was cancelled.")
                 # Press 's' to save current OCR text
                 elif key == ord('s') and self.ocr_text:
                     filename = f"ocr_text_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
